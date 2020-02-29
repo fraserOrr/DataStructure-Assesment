@@ -1,0 +1,13 @@
+I used a heap sort to sort my non- zero elements as it has a worst case time complexity of O(nlogn).
+The height of a binary tree for n elements is log(n). To heapify them it gets pushed down the heap being compared to
+both lefty and right elements. In the worst case it has to go from top to bottom making it log(n). The heap 
+is split at the root node meaning each time the maximum nodes compared in always n/2*log(n). As constants make no
+difference with the large numbers it turns to O(nlogn). In the sorting stage we swap elements, again worst case
+is top to bottom so log(n) and we do this n times so nlog(n). These steps are done one after the other so the
+time complexity is not multiplied.
+
+For the addition of two matrices, it takes O(N1 + N2) in a worst case senario where none of the elements involved are
+in the same location, This means one set of enteries would be addeded to the other requiring it to run through both.
+This effectively means each time round my while loop 1 counter increments once. In a best case senario where all N1 elements
+share a position with N2 within the matrix the Time complecity would be O(N) of largest entry size as each time round the 
+both counters would be incremented.
